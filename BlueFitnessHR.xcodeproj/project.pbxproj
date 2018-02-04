@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15128B4320279A0B0007BD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B4220279A0B0007BD2C /* AppDelegate.swift */; };
+		15128B4520279A0B0007BD2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B4420279A0B0007BD2C /* ViewController.swift */; };
+		15128B4820279A0B0007BD2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15128B4620279A0B0007BD2C /* Main.storyboard */; };
+		15128B4A20279A0B0007BD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15128B4920279A0B0007BD2C /* Assets.xcassets */; };
+		15128B4D20279A0B0007BD2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15128B4B20279A0B0007BD2C /* LaunchScreen.storyboard */; };
+		15128B5220279A0B0007BD2C /* BlueFitnessHR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 15128B5120279A0B0007BD2C /* BlueFitnessHR WatchKit App.app */; };
+		15128B5820279A0B0007BD2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15128B5620279A0B0007BD2C /* Interface.storyboard */; };
+		15128B5A20279A0B0007BD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15128B5920279A0B0007BD2C /* Assets.xcassets */; };
+		15128B6120279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15128B6020279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		15128B6620279A0B0007BD2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6520279A0B0007BD2C /* InterfaceController.swift */; };
+		15128B6820279A0B0007BD2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */; };
+		15128B6A20279A0B0007BD2C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6920279A0B0007BD2C /* NotificationController.swift */; };
+		15128B6C20279A0B0007BD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15128B6B20279A0B0007BD2C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15128B5320279A0B0007BD2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15128B3720279A0B0007BD2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15128B5020279A0B0007BD2C;
+			remoteInfo = "BlueFitnessHR WatchKit App";
+		};
+		15128B6220279A0B0007BD2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15128B3720279A0B0007BD2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15128B5F20279A0B0007BD2C;
+			remoteInfo = "BlueFitnessHR WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15128B7420279A0B0007BD2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				15128B6120279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15128B7820279A0B0007BD2C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				15128B5220279A0B0007BD2C /* BlueFitnessHR WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15128B3F20279A0B0007BD2C /* BlueFitnessHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueFitnessHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15128B4220279A0B0007BD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15128B4420279A0B0007BD2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15128B4720279A0B0007BD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15128B4920279A0B0007BD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15128B4C20279A0B0007BD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15128B4E20279A0B0007BD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15128B5120279A0B0007BD2C /* BlueFitnessHR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueFitnessHR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15128B5720279A0B0007BD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		15128B5920279A0B0007BD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15128B5B20279A0B0007BD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15128B6020279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BlueFitnessHR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15128B6520279A0B0007BD2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		15128B6920279A0B0007BD2C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		15128B6B20279A0B0007BD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15128B6D20279A0B0007BD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15128B6E20279A0B0007BD2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15128B3C20279A0B0007BD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15128B5D20279A0B0007BD2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15128B3620279A0B0007BD2C = {
+			isa = PBXGroup;
+			children = (
+				15128B4120279A0B0007BD2C /* BlueFitnessHR */,
+				15128B5520279A0B0007BD2C /* BlueFitnessHR WatchKit App */,
+				15128B6420279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */,
+				15128B4020279A0B0007BD2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15128B4020279A0B0007BD2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15128B3F20279A0B0007BD2C /* BlueFitnessHR.app */,
+				15128B5120279A0B0007BD2C /* BlueFitnessHR WatchKit App.app */,
+				15128B6020279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15128B4120279A0B0007BD2C /* BlueFitnessHR */ = {
+			isa = PBXGroup;
+			children = (
+				15128B4220279A0B0007BD2C /* AppDelegate.swift */,
+				15128B4420279A0B0007BD2C /* ViewController.swift */,
+				15128B4620279A0B0007BD2C /* Main.storyboard */,
+				15128B4920279A0B0007BD2C /* Assets.xcassets */,
+				15128B4B20279A0B0007BD2C /* LaunchScreen.storyboard */,
+				15128B4E20279A0B0007BD2C /* Info.plist */,
+			);
+			path = BlueFitnessHR;
+			sourceTree = "<group>";
+		};
+		15128B5520279A0B0007BD2C /* BlueFitnessHR WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				15128B5620279A0B0007BD2C /* Interface.storyboard */,
+				15128B5920279A0B0007BD2C /* Assets.xcassets */,
+				15128B5B20279A0B0007BD2C /* Info.plist */,
+			);
+			path = "BlueFitnessHR WatchKit App";
+			sourceTree = "<group>";
+		};
+		15128B6420279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15128B6520279A0B0007BD2C /* InterfaceController.swift */,
+				15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */,
+				15128B6920279A0B0007BD2C /* NotificationController.swift */,
+				15128B6B20279A0B0007BD2C /* Assets.xcassets */,
+				15128B6D20279A0B0007BD2C /* Info.plist */,
+				15128B6E20279A0B0007BD2C /* PushNotificationPayload.apns */,
+			);
+			path = "BlueFitnessHR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15128B3E20279A0B0007BD2C /* BlueFitnessHR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15128B7920279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR" */;
+			buildPhases = (
+				15128B3B20279A0B0007BD2C /* Sources */,
+				15128B3C20279A0B0007BD2C /* Frameworks */,
+				15128B3D20279A0B0007BD2C /* Resources */,
+				15128B7820279A0B0007BD2C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15128B5420279A0B0007BD2C /* PBXTargetDependency */,
+			);
+			name = BlueFitnessHR;
+			productName = BlueFitnessHR;
+			productReference = 15128B3F20279A0B0007BD2C /* BlueFitnessHR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15128B5020279A0B0007BD2C /* BlueFitnessHR WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15128B7520279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR WatchKit App" */;
+			buildPhases = (
+				15128B4F20279A0B0007BD2C /* Resources */,
+				15128B7420279A0B0007BD2C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15128B6320279A0B0007BD2C /* PBXTargetDependency */,
+			);
+			name = "BlueFitnessHR WatchKit App";
+			productName = "BlueFitnessHR WatchKit App";
+			productReference = 15128B5120279A0B0007BD2C /* BlueFitnessHR WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		15128B5F20279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15128B7120279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR WatchKit Extension" */;
+			buildPhases = (
+				15128B5C20279A0B0007BD2C /* Sources */,
+				15128B5D20279A0B0007BD2C /* Frameworks */,
+				15128B5E20279A0B0007BD2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlueFitnessHR WatchKit Extension";
+			productName = "BlueFitnessHR WatchKit Extension";
+			productReference = 15128B6020279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15128B3720279A0B0007BD2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = KBStudios;
+				TargetAttributes = {
+					15128B3E20279A0B0007BD2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					15128B5020279A0B0007BD2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					15128B5F20279A0B0007BD2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 15128B3A20279A0B0007BD2C /* Build configuration list for PBXProject "BlueFitnessHR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15128B3620279A0B0007BD2C;
+			productRefGroup = 15128B4020279A0B0007BD2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15128B3E20279A0B0007BD2C /* BlueFitnessHR */,
+				15128B5020279A0B0007BD2C /* BlueFitnessHR WatchKit App */,
+				15128B5F20279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15128B3D20279A0B0007BD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15128B4D20279A0B0007BD2C /* LaunchScreen.storyboard in Resources */,
+				15128B4A20279A0B0007BD2C /* Assets.xcassets in Resources */,
+				15128B4820279A0B0007BD2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15128B4F20279A0B0007BD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15128B5A20279A0B0007BD2C /* Assets.xcassets in Resources */,
+				15128B5820279A0B0007BD2C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15128B5E20279A0B0007BD2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15128B6C20279A0B0007BD2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15128B3B20279A0B0007BD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15128B4520279A0B0007BD2C /* ViewController.swift in Sources */,
+				15128B4320279A0B0007BD2C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15128B5C20279A0B0007BD2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15128B6A20279A0B0007BD2C /* NotificationController.swift in Sources */,
+				15128B6820279A0B0007BD2C /* ExtensionDelegate.swift in Sources */,
+				15128B6620279A0B0007BD2C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15128B5420279A0B0007BD2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15128B5020279A0B0007BD2C /* BlueFitnessHR WatchKit App */;
+			targetProxy = 15128B5320279A0B0007BD2C /* PBXContainerItemProxy */;
+		};
+		15128B6320279A0B0007BD2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15128B5F20279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */;
+			targetProxy = 15128B6220279A0B0007BD2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15128B4620279A0B0007BD2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15128B4720279A0B0007BD2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15128B4B20279A0B0007BD2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15128B4C20279A0B0007BD2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		15128B5620279A0B0007BD2C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15128B5720279A0B0007BD2C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15128B6F20279A0B0007BD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15128B7020279A0B0007BD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15128B7220279A0B0007BD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCB227D757;
+				INFOPLIST_FILE = "BlueFitnessHR WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KBStudios.BlueFitnessHR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		15128B7320279A0B0007BD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCB227D757;
+				INFOPLIST_FILE = "BlueFitnessHR WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KBStudios.BlueFitnessHR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		15128B7620279A0B0007BD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCB227D757;
+				IBSC_MODULE = BlueFitnessHR_WatchKit_Extension;
+				INFOPLIST_FILE = "BlueFitnessHR WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KBStudios.BlueFitnessHR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		15128B7720279A0B0007BD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCB227D757;
+				IBSC_MODULE = BlueFitnessHR_WatchKit_Extension;
+				INFOPLIST_FILE = "BlueFitnessHR WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KBStudios.BlueFitnessHR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		15128B7A20279A0B0007BD2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCB227D757;
+				INFOPLIST_FILE = BlueFitnessHR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KBStudios.BlueFitnessHR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15128B7B20279A0B0007BD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCB227D757;
+				INFOPLIST_FILE = BlueFitnessHR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KBStudios.BlueFitnessHR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15128B3A20279A0B0007BD2C /* Build configuration list for PBXProject "BlueFitnessHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15128B6F20279A0B0007BD2C /* Debug */,
+				15128B7020279A0B0007BD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15128B7120279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15128B7220279A0B0007BD2C /* Debug */,
+				15128B7320279A0B0007BD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15128B7520279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15128B7620279A0B0007BD2C /* Debug */,
+				15128B7720279A0B0007BD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15128B7920279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15128B7A20279A0B0007BD2C /* Debug */,
+				15128B7B20279A0B0007BD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15128B3720279A0B0007BD2C /* Project object */;
+}
