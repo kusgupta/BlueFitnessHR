@@ -1,0 +1,6 @@
+framework module Pods_BlueFitnessHR_WatchKit_Extension {
+  umbrella header "Pods-BlueFitnessHR WatchKit Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

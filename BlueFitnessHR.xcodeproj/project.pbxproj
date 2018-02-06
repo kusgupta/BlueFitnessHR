@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10FA2C19A6AFBC14BE1BA2F4 /* Pods_BlueFitnessHR_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D10EBB93A7C44A0D32B3159 /* Pods_BlueFitnessHR_WatchKit_Extension.framework */; };
 		15128B4320279A0B0007BD2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B4220279A0B0007BD2C /* AppDelegate.swift */; };
 		15128B4520279A0B0007BD2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B4420279A0B0007BD2C /* ViewController.swift */; };
 		15128B4820279A0B0007BD2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15128B4620279A0B0007BD2C /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		153A0949202970060083286B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A0948202970060083286B /* HealthKit.framework */; };
 		153A094E2029715F0083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
 		153A0952202A2F310083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
+		153A0954202A44A70083286B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153A0953202A44A60083286B /* GoogleService-Info.plist */; };
+		17B146D8B7C4867B0FD34C61 /* Pods_BlueFitnessHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA809994E18340B0A703925 /* Pods_BlueFitnessHR.framework */; };
+		69E308F01407F102978A7CD1 /* Pods_BlueFitnessHR_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06560E2524F2FF901022A65E /* Pods-BlueFitnessHR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR/Pods-BlueFitnessHR.release.xcconfig"; sourceTree = "<group>"; };
 		15128B3F20279A0B0007BD2C /* BlueFitnessHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueFitnessHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15128B4220279A0B0007BD2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15128B4420279A0B0007BD2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +91,15 @@
 		153A0946202970060083286B /* BlueFitnessHR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlueFitnessHR.entitlements; sourceTree = "<group>"; };
 		153A0948202970060083286B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		153A094D2029715F0083286B /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		153A0953202A44A60083286B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D10EBB93A7C44A0D32B3159 /* Pods_BlueFitnessHR_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueFitnessHR_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E61ADC7FB8D36E547AD81F9 /* Pods-BlueFitnessHR WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR WatchKit Extension/Pods-BlueFitnessHR WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueFitnessHR_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8316455EAF52D08F75FF5C58 /* Pods-BlueFitnessHR WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR WatchKit App/Pods-BlueFitnessHR WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		A019A4C056F7C0EBE4C5B01B /* Pods-BlueFitnessHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR/Pods-BlueFitnessHR.debug.xcconfig"; sourceTree = "<group>"; };
+		A72AE51491436909F2E0B025 /* Pods-BlueFitnessHR WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR WatchKit Extension/Pods-BlueFitnessHR WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		B87F421053E1C94D8B5357C8 /* Pods-BlueFitnessHR WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR WatchKit App/Pods-BlueFitnessHR WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		BDA809994E18340B0A703925 /* Pods_BlueFitnessHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueFitnessHR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				153A0949202970060083286B /* HealthKit.framework in Frameworks */,
+				17B146D8B7C4867B0FD34C61 /* Pods_BlueFitnessHR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +116,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10FA2C19A6AFBC14BE1BA2F4 /* Pods_BlueFitnessHR_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A673871D35ABBE945AD059F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E308F01407F102978A7CD1 /* Pods_BlueFitnessHR_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +140,7 @@
 				15128B6420279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */,
 				15128B4020279A0B0007BD2C /* Products */,
 				153A0947202970060083286B /* Frameworks */,
+				1F3ED840467E6F15AE8C7BF9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +157,7 @@
 		15128B4120279A0B0007BD2C /* BlueFitnessHR */ = {
 			isa = PBXGroup;
 			children = (
+				153A0953202A44A60083286B /* GoogleService-Info.plist */,
 				153A0946202970060083286B /* BlueFitnessHR.entitlements */,
 				15128B4220279A0B0007BD2C /* AppDelegate.swift */,
 				15128B4420279A0B0007BD2C /* ViewController.swift */,
@@ -168,6 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				153A0948202970060083286B /* HealthKit.framework */,
+				BDA809994E18340B0A703925 /* Pods_BlueFitnessHR.framework */,
+				5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */,
+				3D10EBB93A7C44A0D32B3159 /* Pods_BlueFitnessHR_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,6 +209,19 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		1F3ED840467E6F15AE8C7BF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A019A4C056F7C0EBE4C5B01B /* Pods-BlueFitnessHR.debug.xcconfig */,
+				06560E2524F2FF901022A65E /* Pods-BlueFitnessHR.release.xcconfig */,
+				8316455EAF52D08F75FF5C58 /* Pods-BlueFitnessHR WatchKit App.debug.xcconfig */,
+				B87F421053E1C94D8B5357C8 /* Pods-BlueFitnessHR WatchKit App.release.xcconfig */,
+				A72AE51491436909F2E0B025 /* Pods-BlueFitnessHR WatchKit Extension.debug.xcconfig */,
+				3E61ADC7FB8D36E547AD81F9 /* Pods-BlueFitnessHR WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,10 +229,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15128B7920279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR" */;
 			buildPhases = (
+				190FEB3A5D5F32BE8E33D3BA /* [CP] Check Pods Manifest.lock */,
 				15128B3B20279A0B0007BD2C /* Sources */,
 				15128B3C20279A0B0007BD2C /* Frameworks */,
 				15128B3D20279A0B0007BD2C /* Resources */,
 				15128B7820279A0B0007BD2C /* Embed Watch Content */,
+				B88F64851F449B47E634D37C /* [CP] Embed Pods Frameworks */,
+				35C3A6C73046964326A77930 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,8 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15128B7520279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR WatchKit App" */;
 			buildPhases = (
+				CEECED93236C3EBD01015F2C /* [CP] Check Pods Manifest.lock */,
 				15128B4F20279A0B0007BD2C /* Resources */,
 				15128B7420279A0B0007BD2C /* Embed App Extensions */,
+				A673871D35ABBE945AD059F1 /* Frameworks */,
+				148FEE56B866ACA2CAFA3DB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15128B7120279A0B0007BD2C /* Build configuration list for PBXNativeTarget "BlueFitnessHR WatchKit Extension" */;
 			buildPhases = (
+				7A0A1D5C08F34AD20BB913EF /* [CP] Check Pods Manifest.lock */,
 				15128B5C20279A0B0007BD2C /* Sources */,
 				15128B5D20279A0B0007BD2C /* Frameworks */,
 				15128B5E20279A0B0007BD2C /* Resources */,
+				F2214BAE3804DE49D0F580CF /* [CP] Embed Pods Frameworks */,
+				268A6E932B74AE1C804D6075 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15128B4D20279A0B0007BD2C /* LaunchScreen.storyboard in Resources */,
+				153A0954202A44A70083286B /* GoogleService-Info.plist in Resources */,
 				15128B4A20279A0B0007BD2C /* Assets.xcassets in Resources */,
 				15128B4820279A0B0007BD2C /* Main.storyboard in Resources */,
 			);
@@ -314,6 +366,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		148FEE56B866ACA2CAFA3DB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueFitnessHR WatchKit App/Pods-BlueFitnessHR WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		190FEB3A5D5F32BE8E33D3BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueFitnessHR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		268A6E932B74AE1C804D6075 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueFitnessHR WatchKit Extension/Pods-BlueFitnessHR WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35C3A6C73046964326A77930 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueFitnessHR/Pods-BlueFitnessHR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A0A1D5C08F34AD20BB913EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueFitnessHR WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B88F64851F449B47E634D37C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlueFitnessHR/Pods-BlueFitnessHR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueFitnessHR/Pods-BlueFitnessHR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEECED93236C3EBD01015F2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueFitnessHR WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2214BAE3804DE49D0F580CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueFitnessHR WatchKit Extension/Pods-BlueFitnessHR WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15128B3B20279A0B0007BD2C /* Sources */ = {
@@ -488,6 +677,7 @@
 		};
 		15128B7220279A0B0007BD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72AE51491436909F2E0B025 /* Pods-BlueFitnessHR WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +696,7 @@
 		};
 		15128B7320279A0B0007BD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E61ADC7FB8D36E547AD81F9 /* Pods-BlueFitnessHR WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +715,7 @@
 		};
 		15128B7620279A0B0007BD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8316455EAF52D08F75FF5C58 /* Pods-BlueFitnessHR WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -543,6 +735,7 @@
 		};
 		15128B7720279A0B0007BD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87F421053E1C94D8B5357C8 /* Pods-BlueFitnessHR WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -562,6 +755,7 @@
 		};
 		15128B7A20279A0B0007BD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A019A4C056F7C0EBE4C5B01B /* Pods-BlueFitnessHR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlueFitnessHR/BlueFitnessHR.entitlements;
@@ -578,6 +772,7 @@
 		};
 		15128B7B20279A0B0007BD2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06560E2524F2FF901022A65E /* Pods-BlueFitnessHR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlueFitnessHR/BlueFitnessHR.entitlements;
