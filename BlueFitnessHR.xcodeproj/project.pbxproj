@@ -18,10 +18,10 @@
 		15128B6120279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15128B6020279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		15128B6620279A0B0007BD2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6520279A0B0007BD2C /* InterfaceController.swift */; };
 		15128B6820279A0B0007BD2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */; };
-		15128B6A20279A0B0007BD2C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6920279A0B0007BD2C /* NotificationController.swift */; };
 		15128B6C20279A0B0007BD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15128B6B20279A0B0007BD2C /* Assets.xcassets */; };
 		153A0949202970060083286B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A0948202970060083286B /* HealthKit.framework */; };
 		153A094E2029715F0083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
+		153A0952202A2F310083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,10 +81,8 @@
 		15128B6020279A0B0007BD2C /* BlueFitnessHR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BlueFitnessHR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15128B6520279A0B0007BD2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		15128B6920279A0B0007BD2C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		15128B6B20279A0B0007BD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15128B6D20279A0B0007BD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15128B6E20279A0B0007BD2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		153A0946202970060083286B /* BlueFitnessHR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlueFitnessHR.entitlements; sourceTree = "<group>"; };
 		153A0948202970060083286B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		153A094D2029715F0083286B /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
@@ -112,6 +110,7 @@
 		15128B3620279A0B0007BD2C = {
 			isa = PBXGroup;
 			children = (
+				153A0951202A2E000083286B /* Shared */,
 				15128B4120279A0B0007BD2C /* BlueFitnessHR */,
 				15128B5520279A0B0007BD2C /* BlueFitnessHR WatchKit App */,
 				15128B6420279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */,
@@ -159,11 +158,8 @@
 			children = (
 				15128B6520279A0B0007BD2C /* InterfaceController.swift */,
 				15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */,
-				15128B6920279A0B0007BD2C /* NotificationController.swift */,
 				15128B6B20279A0B0007BD2C /* Assets.xcassets */,
 				15128B6D20279A0B0007BD2C /* Info.plist */,
-				15128B6E20279A0B0007BD2C /* PushNotificationPayload.apns */,
-				153A094D2029715F0083286B /* HealthKitManager.swift */,
 			);
 			path = "BlueFitnessHR WatchKit Extension";
 			sourceTree = "<group>";
@@ -174,6 +170,14 @@
 				153A0948202970060083286B /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		153A0951202A2E000083286B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				153A094D2029715F0083286B /* HealthKitManager.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +322,7 @@
 			files = (
 				15128B4520279A0B0007BD2C /* ViewController.swift in Sources */,
 				15128B4320279A0B0007BD2C /* AppDelegate.swift in Sources */,
+				153A0952202A2F310083286B /* HealthKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15128B6A20279A0B0007BD2C /* NotificationController.swift in Sources */,
 				15128B6820279A0B0007BD2C /* ExtensionDelegate.swift in Sources */,
 				153A094E2029715F0083286B /* HealthKitManager.swift in Sources */,
 				15128B6620279A0B0007BD2C /* InterfaceController.swift in Sources */,
