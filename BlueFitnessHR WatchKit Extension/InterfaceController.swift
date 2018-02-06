@@ -12,6 +12,9 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
+    @IBOutlet var heartRateLabel: WKInterfaceLabel!
+    
+    @IBOutlet var workoutButton: WKInterfaceButton!
     let healthKitManager = HealthKitManager.sharedInstance
     
     override func awake(withContext context: Any?) {
@@ -33,5 +36,8 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    @IBAction func startOrStopWorkout() {
+        print("button tapped")
+    }
 }
 

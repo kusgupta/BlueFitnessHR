@@ -12,7 +12,22 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BlueFitnessHR_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BlueFitnessHR_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="ed9-yE-O64">
+                            <connections>
+                                <action selector="startOrStopWorkout" destination="AgC-eL-Hgc" id="gA2-MC-hSa"/>
+                            </connections>
+                        </button>
+                        <label width="136" alignment="left" text="?" textAlignment="center" id="5tB-gY-D61">
+                            <fontDescription key="font" type="system" pointSize="32"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="heartRateLabel" destination="5tB-gY-D61" id="KOv-Ia-Z8f"/>
+                        <outlet property="workoutButton" destination="ed9-yE-O64" id="lUW-FR-ROe"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
