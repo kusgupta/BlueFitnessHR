@@ -12,10 +12,15 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    let healthKitManager = HealthKitManager.sharedInstance
+    
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        healthKitManager.authorizeHealthKit { (success, error)} in
+            print("Was healthkit successful? \(success)")
     }
     
     override func willActivate() {

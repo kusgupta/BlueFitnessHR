@@ -20,6 +20,8 @@
 		15128B6820279A0B0007BD2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */; };
 		15128B6A20279A0B0007BD2C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15128B6920279A0B0007BD2C /* NotificationController.swift */; };
 		15128B6C20279A0B0007BD2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15128B6B20279A0B0007BD2C /* Assets.xcassets */; };
+		153A0949202970060083286B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153A0948202970060083286B /* HealthKit.framework */; };
+		153A094E2029715F0083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,9 @@
 		15128B6B20279A0B0007BD2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15128B6D20279A0B0007BD2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15128B6E20279A0B0007BD2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		153A0946202970060083286B /* BlueFitnessHR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlueFitnessHR.entitlements; sourceTree = "<group>"; };
+		153A0948202970060083286B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		153A094D2029715F0083286B /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153A0949202970060083286B /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +116,7 @@
 				15128B5520279A0B0007BD2C /* BlueFitnessHR WatchKit App */,
 				15128B6420279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */,
 				15128B4020279A0B0007BD2C /* Products */,
+				153A0947202970060083286B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +133,7 @@
 		15128B4120279A0B0007BD2C /* BlueFitnessHR */ = {
 			isa = PBXGroup;
 			children = (
+				153A0946202970060083286B /* BlueFitnessHR.entitlements */,
 				15128B4220279A0B0007BD2C /* AppDelegate.swift */,
 				15128B4420279A0B0007BD2C /* ViewController.swift */,
 				15128B4620279A0B0007BD2C /* Main.storyboard */,
@@ -155,8 +163,17 @@
 				15128B6B20279A0B0007BD2C /* Assets.xcassets */,
 				15128B6D20279A0B0007BD2C /* Info.plist */,
 				15128B6E20279A0B0007BD2C /* PushNotificationPayload.apns */,
+				153A094D2029715F0083286B /* HealthKitManager.swift */,
 			);
 			path = "BlueFitnessHR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		153A0947202970060083286B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				153A0948202970060083286B /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +245,11 @@
 					15128B3E20279A0B0007BD2C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					15128B5020279A0B0007BD2C = {
 						CreatedOnToolsVersion = 9.2;
@@ -305,6 +327,7 @@
 			files = (
 				15128B6A20279A0B0007BD2C /* NotificationController.swift in Sources */,
 				15128B6820279A0B0007BD2C /* ExtensionDelegate.swift in Sources */,
+				153A094E2029715F0083286B /* HealthKitManager.swift in Sources */,
 				15128B6620279A0B0007BD2C /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlueFitnessHR/BlueFitnessHR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCB227D757;
 				INFOPLIST_FILE = BlueFitnessHR/Info.plist;
@@ -552,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlueFitnessHR/BlueFitnessHR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCB227D757;
 				INFOPLIST_FILE = BlueFitnessHR/Info.plist;
