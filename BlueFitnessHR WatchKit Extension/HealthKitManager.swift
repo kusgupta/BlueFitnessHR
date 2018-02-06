@@ -5,7 +5,6 @@
 //  Created by Kushan Gupta on 2/5/18.
 //  Copyright © 2018 KBStudios. All rights reserved.
 //
-
 import Foundation
 import HealthKit
 
@@ -22,13 +21,13 @@ class HealthKitManager: NSObject {
         guard let heartRateType: HKQuantityType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
             return
         }
+        let typesToShare = Set([HKObjectType.workoutType(), heartRateType])
+        let typesToRead = Set([HKObjectType.workoutType(), heartRateType])
         
-        let typesToShare = Set([HKObjectType.workoutType()])
-        let typesToRead = Set([HKObjectType.workoutType()])
-        
-        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead)
-        {  (success, error) in print("Was authorization successfull? \(success)")
+        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
+            print("Was authorization successful? \(success)")
             completion(success, error)
         }
     }
 }
+
