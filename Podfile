@@ -7,6 +7,7 @@ target 'BlueFitnessHR' do
 
   # Pods for BlueFitnessHR
 pod 'Firebase/Core'
+pod 'Firebase/Database'
 end
 
 target 'BlueFitnessHR WatchKit App' do
