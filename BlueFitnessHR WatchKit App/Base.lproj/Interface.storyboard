@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BlueFitnessHR_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="ed9-yE-O64">
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start Workout" id="ed9-yE-O64">
                             <connections>
                                 <action selector="startOrStopWorkout" destination="AgC-eL-Hgc" id="gA2-MC-hSa"/>
                             </connections>

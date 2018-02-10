@@ -24,6 +24,7 @@
 		153A094E2029715F0083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
 		153A0952202A2F310083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
 		153A0954202A44A70083286B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153A0953202A44A60083286B /* GoogleService-Info.plist */; };
+		15EC1EF4202FA6AB00584E7D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EC1EF3202FA6AB00584E7D /* HealthKit.framework */; };
 		17B146D8B7C4867B0FD34C61 /* Pods_BlueFitnessHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA809994E18340B0A703925 /* Pods_BlueFitnessHR.framework */; };
 		69E308F01407F102978A7CD1 /* Pods_BlueFitnessHR_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,8 @@
 		153A0948202970060083286B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		153A094D2029715F0083286B /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		153A0953202A44A60083286B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15EC1EF2202FA6AA00584E7D /* BlueFitnessHR WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BlueFitnessHR WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		15EC1EF3202FA6AB00584E7D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		3D10EBB93A7C44A0D32B3159 /* Pods_BlueFitnessHR_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueFitnessHR_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E61ADC7FB8D36E547AD81F9 /* Pods-BlueFitnessHR WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR WatchKit Extension/Pods-BlueFitnessHR WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueFitnessHR_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FA2C19A6AFBC14BE1BA2F4 /* Pods_BlueFitnessHR_WatchKit_Extension.framework in Frameworks */,
+				15EC1EF4202FA6AB00584E7D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +186,7 @@
 		15128B6420279A0B0007BD2C /* BlueFitnessHR WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				15EC1EF2202FA6AA00584E7D /* BlueFitnessHR WatchKit Extension.entitlements */,
 				15128B6520279A0B0007BD2C /* InterfaceController.swift */,
 				15128B6720279A0B0007BD2C /* ExtensionDelegate.swift */,
 				15128B6B20279A0B0007BD2C /* Assets.xcassets */,
@@ -193,6 +198,7 @@
 		153A0947202970060083286B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15EC1EF3202FA6AB00584E7D /* HealthKit.framework */,
 				153A0948202970060083286B /* HealthKit.framework */,
 				BDA809994E18340B0A703925 /* Pods_BlueFitnessHR.framework */,
 				5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */,
@@ -309,10 +315,20 @@
 					15128B5020279A0B0007BD2C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					15128B5F20279A0B0007BD2C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -682,6 +698,7 @@
 			baseConfigurationReference = A72AE51491436909F2E0B025 /* Pods-BlueFitnessHR WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BlueFitnessHR WatchKit Extension/BlueFitnessHR WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCB227D757;
 				INFOPLIST_FILE = "BlueFitnessHR WatchKit Extension/Info.plist";
@@ -701,6 +718,7 @@
 			baseConfigurationReference = 3E61ADC7FB8D36E547AD81F9 /* Pods-BlueFitnessHR WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BlueFitnessHR WatchKit Extension/BlueFitnessHR WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCB227D757;
 				INFOPLIST_FILE = "BlueFitnessHR WatchKit Extension/Info.plist";
