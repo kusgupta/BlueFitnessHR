@@ -10,7 +10,6 @@ import WatchKit
 import Foundation
 import HealthKit
 
-
 class InterfaceController: WKInterfaceController {
     
     var workoutSession: HKWorkoutSession?
@@ -143,6 +142,7 @@ extension InterfaceController: HKWorkoutSessionDelegate {
                 self.heartRateQuery = query
                 self.healthKitManager.heartRateDelegate = self
                 healthKitManager.healthStore.execute(query)
+
             }
         case .ended:
             print("workout ended")
