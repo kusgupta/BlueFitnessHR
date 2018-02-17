@@ -25,8 +25,6 @@
 		153A0952202A2F310083286B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153A094D2029715F0083286B /* HealthKitManager.swift */; };
 		153A0954202A44A70083286B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 153A0953202A44A60083286B /* GoogleService-Info.plist */; };
 		15EC1EF4202FA6AB00584E7D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EC1EF3202FA6AB00584E7D /* HealthKit.framework */; };
-		15EC1EF6202FB9F300584E7D /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC1EF5202FB9F300584E7D /* Firebase.swift */; };
-		15EC1EF7202FBABA00584E7D /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC1EF5202FB9F300584E7D /* Firebase.swift */; };
 		17B146D8B7C4867B0FD34C61 /* Pods_BlueFitnessHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA809994E18340B0A703925 /* Pods_BlueFitnessHR.framework */; };
 		69E308F01407F102978A7CD1 /* Pods_BlueFitnessHR_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
@@ -97,7 +95,6 @@
 		153A0953202A44A60083286B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15EC1EF2202FA6AA00584E7D /* BlueFitnessHR WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BlueFitnessHR WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		15EC1EF3202FA6AB00584E7D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
-		15EC1EF5202FB9F300584E7D /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		3D10EBB93A7C44A0D32B3159 /* Pods_BlueFitnessHR_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueFitnessHR_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E61ADC7FB8D36E547AD81F9 /* Pods-BlueFitnessHR WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueFitnessHR WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueFitnessHR WatchKit Extension/Pods-BlueFitnessHR WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5CBB5E4AAB0E9B0797B561DA /* Pods_BlueFitnessHR_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueFitnessHR_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				153A094D2029715F0083286B /* HealthKitManager.swift */,
-				15EC1EF5202FB9F300584E7D /* Firebase.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -534,7 +530,6 @@
 				15128B4520279A0B0007BD2C /* ViewController.swift in Sources */,
 				15128B4320279A0B0007BD2C /* AppDelegate.swift in Sources */,
 				153A0952202A2F310083286B /* HealthKitManager.swift in Sources */,
-				15EC1EF6202FB9F300584E7D /* Firebase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +539,6 @@
 			files = (
 				15128B6820279A0B0007BD2C /* ExtensionDelegate.swift in Sources */,
 				153A094E2029715F0083286B /* HealthKitManager.swift in Sources */,
-				15EC1EF7202FBABA00584E7D /* Firebase.swift in Sources */,
 				15128B6620279A0B0007BD2C /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

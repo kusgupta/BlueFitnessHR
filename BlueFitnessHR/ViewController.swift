@@ -21,6 +21,8 @@ class ViewController: UIViewController {
 
     var myDatabase: DatabaseReference!
     
+    var currentVal = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,8 +32,10 @@ class ViewController: UIViewController {
             self.retrieveHeartRateData()
         }
         myDatabase = Database.database().reference()
-        myDatabase.child("please work")
-
+        while (true){
+            self.myDatabase.child("heartrate").setValue((addAnum(prevNum: 1)))
+        }
+        
 
     }
     
@@ -49,16 +53,18 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    func addAnum(prevNum: Double) -> Double {
+        return prevNum + 1
+    }
 }
     
     extension ViewController: HeartRateDelegate {
         func heartRateUpdated(heartRateSamples: [HKSample]){
-            
             guard let heartRateSamples = heartRateSamples as?[HKQuantitySample] else{
                 return
             }
             DispatchQueue.main.async {
-                self.myDatabase.child("heartrate").setValue(heartRateSamples)
                 self.datasource.append(contentsOf: heartRateSamples)
             }
         }
