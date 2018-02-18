@@ -9,8 +9,14 @@
 import WatchKit
 import Foundation
 import HealthKit
+import WatchConnectivity
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate{
+    
+    func session(_ session: WCSession,  activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
     
     var workoutSession: HKWorkoutSession?
     
@@ -27,6 +33,9 @@ class InterfaceController: WKInterfaceController {
     var heartRateQuery: HKQuery?
     
     var heartRateSamples: [HKQuantitySample] = [HKQuantitySample]()
+    
+    var session: WCSession!
+
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -47,6 +56,12 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        if (WCSession.isSupported()) {
+            session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
     }
     
     override func didDeactivate() {
@@ -73,7 +88,7 @@ class InterfaceController: WKInterfaceController {
         workoutConfiguration.locationType = .unknown
         
         do {
-        workoutSession = try HKWorkoutSession(configuration: workoutConfiguration)
+            workoutSession = try HKWorkoutSession(configuration: workoutConfiguration)
             workoutSession?.delegate = self
             
         } catch {
@@ -121,9 +136,10 @@ class InterfaceController: WKInterfaceController {
                 }
                 
             })
+        }
+        
     }
     
-}
 }
 
 extension InterfaceController: HKWorkoutSessionDelegate {
@@ -142,7 +158,7 @@ extension InterfaceController: HKWorkoutSessionDelegate {
                 self.heartRateQuery = query
                 self.healthKitManager.heartRateDelegate = self
                 healthKitManager.healthStore.execute(query)
-
+                
             }
         case .ended:
             print("workout ended")
@@ -169,7 +185,11 @@ extension InterfaceController: HeartRateDelegate {
             }
             let value = sample.quantity.doubleValue(for: HKUnit(from: "count/min"))
             let heartRateString = String(format: "%.00f", value)
+            
             self.heartRateLabel.setText(heartRateString)
+            let applicationData = ["heartrate":String(heartRateString)]
+            self.session.sendMessage(applicationData, replyHandler: nil, errorHandler: nil)
+            
         }
     }
     
